@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../assets/img/hero-bg.avif";
+import backgroundImage from "../assets/img/hero-bg.jpg";
 import Button from "react-bootstrap/Button";
 
 const Hero = () => {
