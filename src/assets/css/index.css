@@ -24,5 +24,11 @@
 }
 
 .hero-heading {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .hero-heading {
+    font-size: 1.5rem;
+  }
 }
