@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import { motion } from "framer-motion";
+
+const MotionContainer = motion(Container);
 
 const Header = () => {
   return (
@@ -12,7 +15,7 @@ const Header = () => {
       sticky="top"
       className="p-3"
     >
-      <Container>
+      <MotionContainer animate={{ y: 0 }} initial={{ y: -250 }}>
         <Navbar.Brand href="/">Benign</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -35,7 +38,7 @@ const Header = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Container>
+      </MotionContainer>
     </Navbar>
   );
 };

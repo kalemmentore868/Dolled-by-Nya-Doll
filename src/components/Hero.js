@@ -1,6 +1,10 @@
 import React from "react";
 import backgroundImage from "../assets/img/hero-bg.jpg";
 import Button from "react-bootstrap/Button";
+import { motion } from "framer-motion";
+import AnimatedTextWord from "./AnimatedTextWord";
+
+const MotionButton = motion(Button);
 
 const Hero = () => {
   return (
@@ -10,13 +14,35 @@ const Hero = () => {
     >
       <div className="mask d-flex justify-content-center align-items-center h-100">
         <div className="hero-content">
-          <h2 className="mb-3 text-white">
-            Home care services for the <br /> ones that matter most
-          </h2>
-          <Button variant="primary" className="me-4">
+          <motion.h2
+            animate={{ scale: 1.5 }}
+            className="mb-5 text-white hero-heading"
+          >
+            Home care services for the <br />{" "}
+            <AnimatedTextWord
+              divClass="justify-content-center"
+              spanClass="text-light"
+              text="ones that matter most"
+            />
+          </motion.h2>
+          <MotionButton
+            whileHover={{
+              scale: 1.2,
+            }}
+            variant="primary"
+            className="me-4"
+          >
             Find a Caregiver
-          </Button>
-          {"  "} <Button variant="outline-light">Become a Caregiver</Button>
+          </MotionButton>
+          {"  "}{" "}
+          <MotionButton
+            whileHover={{
+              scale: 1.2,
+            }}
+            variant="outline-light"
+          >
+            Become a Caregiver
+          </MotionButton>
         </div>
       </div>
     </section>
