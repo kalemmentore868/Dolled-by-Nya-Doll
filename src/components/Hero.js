@@ -14,17 +14,14 @@ const Hero = () => {
     >
       <div className="mask d-flex justify-content-center align-items-center h-100">
         <div className="hero-content">
-          <motion.h2
-            animate={{ scale: 1.5 }}
-            className="mb-5 text-white hero-heading"
-          >
+          <h2 className="mb-5 text-white hero-heading">
             Home care services for the <br />{" "}
             <AnimatedTextWord
               divClass="justify-content-center"
               spanClass="text-light"
               text="ones that matter most"
             />
-          </motion.h2>
+          </h2>
           <MotionButton
             whileHover={{
               scale: 1.2,
