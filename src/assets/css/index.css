@@ -1,34 +1,12 @@
-.n-link {
-  color: white;
-  margin-right: 1.3rem;
-  font-size: 1.2rem;
+.bg-pink {
+  background-color: #e22d8f;
 }
 
-.hero-bg {
-  height: 500px;
-  background-size: cover;
-  background-position: center center;
+button.bg-pink {
+  outline: none;
+  border: none;
 }
 
-.mask {
-  background: rgba(5, 13, 24, 0.2);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 20;
-}
-
-.about-text {
-  font-size: 1.2rem;
-}
-
-.hero-heading {
-  font-size: 2rem;
-}
-
-@media (max-width: 600px) {
-  .hero-heading {
-    font-size: 1.5rem;
-  }
+button.bg-pink:hover {
+  background-color: #ca1475;
 }
